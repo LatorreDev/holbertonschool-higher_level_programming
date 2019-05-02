@@ -2,7 +2,7 @@
 import random
 number = random.randint(-10000, 10000)
 
-print("Last digit of {0:d} is".format(number))
+print("Last digit of {0:d} is".format(number),end="")
 if number < 0:
     number = number * -1
     number = number % 10
