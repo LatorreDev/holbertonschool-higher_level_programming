@@ -10,7 +10,7 @@ if mod > 5:
     print("Last digit of {0:d} is {1:d} and \
 is greater than 5".format(number, mod))
 elif mod == 0:
-    print(" Last digit of {0:d} is {1:d} and \
+    print("Last digit of {0:d} is {1:d} and \
 is 0".format(number, mod))
 elif mod < 6:
     print("Last digit of {0:d} is {1:d} and \
