@@ -30,6 +30,8 @@ class Square:
         elif (type(self.__position[0]) is not int or
               type(self.__position[1] is not int)):
             raise TypeError("Must be an integer")
+        elif (len(self.__position) is not 2):
+            raise TypeError("Out of range")
         else:
             self.__position = value
 
