@@ -2,8 +2,8 @@
 class Square:
 
     def __init__(self, size=0, position=(0, 0)):
-        self.__size = size
-        self.__position = position
+        self.size = size
+        self.position = position
 
     def area(self):
         return (self.__size ** 2)
@@ -25,15 +25,15 @@ class Square:
     def position(self, value):
         if type(value) is not tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
-        elif self.__position[0] < 0 or self.__position[1] < 0:
-            raise TypeError("Only positive numbers")
-        elif (type(self.__position[0]) is not int or
-              type(self.__position[1] is not int)):
-            raise TypeError("Must be an integer")
-        elif (len(self.__position) is not 2):
+        elif (len(value) is not 2):
             raise TypeError("Out of range")
-        elif (type(self.__position[0]) is str or
-              type(self.__position[1] is str)):
+        elif (type(value[0]) is not int or
+              type(value[1]) is not int):
+            raise TypeError("Must be an integer")
+        elif value[0] < 0 or value[1] < 0:
+            raise TypeError("Only positive numbers")
+        elif (type(value[0]) is str or
+              type(value[1]) is str):
             raise TypeError("Only receive numbers")
         else:
             self.__position = value
