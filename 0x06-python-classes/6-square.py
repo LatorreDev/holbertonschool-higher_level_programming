@@ -26,15 +26,15 @@ class Square:
         if type(value) is not tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
         elif (len(value) is not 2):
-            raise TypeError("Out of range")
+            raise TypeError("position must be a tuple of 2 positive integers")
         elif (type(value[0]) is not int or
               type(value[1]) is not int):
-            raise TypeError("Must be an integer")
+            raise TypeError("position must be a tuple of 2 positive integers")
         elif value[0] < 0 or value[1] < 0:
-            raise TypeError("Only positive numbers")
+            raise TypeError("position must be a tuple of 2 positive integers")
         elif (type(value[0]) is str or
               type(value[1]) is str):
-            raise TypeError("Only receive numbers")
+            raise TypeError("position must be a tuple of 2 positive integers")
         else:
             self.__position = value
 
