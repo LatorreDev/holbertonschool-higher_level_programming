@@ -1,3 +1,3 @@
 #!/bin/bash
-# body size with curl
-curl -f $1
+# GEt only on 200 status
+curl -sf "$1"
