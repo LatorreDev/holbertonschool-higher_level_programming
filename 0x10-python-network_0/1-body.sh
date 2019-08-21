@@ -1,3 +1,3 @@
 #!/bin/bash
 # GEt only on 200 status
-curl -sf "$1"
+curl -s "$1"
