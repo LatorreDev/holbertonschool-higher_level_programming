@@ -1,3 +1,3 @@
 #!/bin/bash
 # body size with curl
-curl -sI
+curl -f $1
